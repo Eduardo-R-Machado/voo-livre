@@ -5,23 +5,103 @@ body{
 main{
     width: 100vw;
     height: 100%;
-    overflow-x: hidden;
 }
 
-.wrp-welcome{
+/* Section welcome */
+.wrpWelcome{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     position: relative;
-    height: 80vh;
+    height: 63vh;
     background-color: rgb(29, 28, 28);
 }
 
-.wrp-welcome img{
+#backgroundWelcome{
     object-fit: cover;
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.66;
+}
+
+.wrpTextsParapente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: #fff;
+}
+
+.wrpTextsParapente .texts{
+width: 55%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+text-align: left;
+margin-bottom: 5%;
+}
+
+.wrpTextsParapente .texts h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+}
+
+.parapente{
+    width: 41%;
+    height: auto;
+    object-fit: contain;
+}
+
+.parapente img{
+    width: 100%;
+    height: auto;
+    margin-bottom: -45%;
+    transform: translateY(0px);
+    animation: float 8s cubic-bezier(.63,-0.58,.5,1.21) infinite;
+}
+
+/* Section info-box */
+
+.infosBox{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #d5dad9ec;
+}
+
+.infosBox h4{
+    color: #000;
+    font-weight:500;
+    font-size: 1.4rem;
+}
+
+.infosBox h4 b{
+    color: var(--first-color);
+}
+
+.infosBox .wrp-box{
+
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
