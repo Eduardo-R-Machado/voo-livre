@@ -215,3 +215,11 @@ padding-left: 12%;
         transform: translateY(0px);
     }
 }
+
+
+.wrp-cards .card{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background-color: var(--first-color);
+}
