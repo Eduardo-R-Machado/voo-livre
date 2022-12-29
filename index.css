@@ -217,9 +217,40 @@ padding-left: 12%;
 }
 
 
+.wrp-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: 350px;
+    grid-gap: 1rem;
+    padding: 1rem;
+    padding-bottom: 8em;
+    width: 97%;
+    place-items: center;
+}
+
 .wrp-cards .card{
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
-    background-color: var(--first-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 27rem;
+    width: 100%;
+    height: 20rem;
+
+    border-radius: 3px;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+.card-img:hover{
+    filter: brightness(0.8);
+    width: 101%;
+    height: 101%;
 }
